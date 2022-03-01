@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def events(bot, update):
-    page = requests.get ("https://kashanu.ac.ir/fa", verify=False)
+    page = requests.get ("https://kashanu.ac.ir/en", verify=False)
     print(page.status_code)
     soup = BeautifulSoup(page.content, 'html.parser')
     events = soup.find_all(class_="title-events")
@@ -17,7 +17,7 @@ def events(bot, update):
     
 def main():
     # replace Telegram Bot Token
-    updater = Updater(TELEGRAM_TOKEN)
+    updater = Updater(1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('events',events))
     updater.start_polling()
