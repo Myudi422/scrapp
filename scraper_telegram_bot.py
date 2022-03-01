@@ -16,8 +16,8 @@ def events(bot, update):
     bot.send_message(chat_id=chat_id, text=event_str)
     
 def main():
-    # replace Telegram Bot Token
-    updater = Updater(1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg)
+    token : '1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg'
+    updater = Updater(token)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('events',events))
     updater.start_polling()
