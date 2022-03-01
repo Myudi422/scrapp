@@ -1,1 +1,1 @@
-worker: python bot.py
+worker: python scraper_telegram_bot.py
