@@ -17,7 +17,7 @@ def events(bot, update):
     
 def main():
     token : '1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg'
-    updater = Updater(token)
+    updater = Updater(TELEGRAM_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('events',events))
     updater.start_polling()
