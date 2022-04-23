@@ -16,7 +16,7 @@ def events(bot, update):
     bot.send_message(chat_id=chat_id, text=event_str)
     
 def main():
-    token : '1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg'
+    token : 1811863530:AAFFYY_EqvKapAYf93HiO2j3qD-pGKNHgLg
     updater = Updater(TELEGRAM_TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('events',events))
